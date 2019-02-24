@@ -1,5 +1,4 @@
 # Write your code here.
-
 katz_deli = [] # Holds the incoming customers.
 
 def take_a_number(katz_deli, name) # Takes deli line and a new customer name as input.
@@ -32,11 +31,11 @@ def line(katz_deli)
     line_message += "The line is currently: 1. #{katz_deli[0]}" #...add their info to the line message...
     while line_counter > 0
       local_array_for_customers.shift
-      line_message += ", #{number_counter + 1}. #{local_array_for_customers[0]}"
+      line_message += " #{number_counter + 1}. #{local_array_for_customers[0]}"
       number_counter += 1
       line_counter -= 1
     end
-    line_message += "." #...add a period to the end of the line message.
+  #  line_message += "." #...add a period to the end of the line message.
     puts line_message #Returns the required string.
   end
 end
